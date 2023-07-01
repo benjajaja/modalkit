@@ -22,9 +22,11 @@ anymap2 = "0.13.0"
 arboard = "3.2.0"
 derive_more = "0.99.16"
 thiserror = "^1.0.37"
-crossterm = "0.26"
+# crossterm = "0.26"
+crossterm = { git = "https://github.com/benjajaja/crossterm", rev = "db515a16f95b36b4871488aa543f564bc929d62e" }
 libc = "0.2"
-tui = { version = "0.21", optional = true, package = "ratatui" }
+# tui = { version = "0.21", optional = true, package = "ratatui" }
+tui = { git = "https://github.com/benjajaja/ratatui", rev = "8729b61fab885dc141c6e0968b4863386c544d9d", package = "ratatui", optional = true}
 intervaltree = { version = "0.2.6", optional = true }
 bitflags = "1.2"
 nom = "7.0.0"
